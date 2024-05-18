@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Horror House</title>
+    <link rel="stylesheet" href="hh.css">
+    
+
+    <style>
+        .audio-button {
+            position: fixed;
+            bottom: 1em;
+            right: 1em;
+            z-index: 9999;
+            width: 7em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <audio autoplay loop muted>
+        <source src="MUSIC.mp3" type="audio/mpeg">
+    </audio>
+
+    <h1 class="header">WELCOME TO HORROR HOUSE... May you escape with your life</h1>
+
+    <div class="container">
+        <p id="displayText"> You wake up in a dark wet room with nothing on you and no memory of how you got there...</p>
+        <br>
+        <br>
+        <p id="choicetext"> Continue or exit... </p>
+        <br>
+        <img src="sound.png" alt="Audio Button" class="audio-button" onclick="startAudio()">
+        <button id="button1" onclick="showText('start')">Continue</button>
+        <button id="button2" onclick="showText('exit')">EXIT</button>
+    </div>
+
+    <div class="inventory">
+        <img src="inventory.png" alt="Inventory" />
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="hh.js"></script>
+</body>
+</html>

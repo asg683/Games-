@@ -1,0 +1,76 @@
+<!Doctype>
+
+<html>
+  <head>
+    <title>Welcome to the Dollhouse!</title>
+
+    <meta name="Indexpage" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Princess+Sofia&family=Waiting+for+the+Sunrise&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <audio autoplay loop muted>
+        <source src="MUSIC.mp3" type="audio/mpeg">
+    </audio>
+  
+    <section>
+      <div style="position: relative;">
+          <div class="header-container">
+            <img src="Inventory.png" alt="Inventory" title="Inventory" id="inventoryimg">
+            <img src="musicbox1.png" alt="Music" id="musicbox">
+
+          </div>
+
+           <!-- Background photo -->
+
+          <img src="alicebedroom1.png" alt="mainmenu" usemap="#image-map" style="border: 5px solid black;" id="backgroundphoto">
+
+          <!-- Next button -->
+
+          <button id="nextbutton" onclick="nextroom('hallway')" style="position: absolute; top: 38%; left: 95%; width: 5%; height: 7%; border-radius: 20%; background-color: red; opacity: .2;"></button>
+
+          <!-- Previous button -->
+
+          <button id="previousbutton" onclick="nextroom('aliceroom')" style="position: absolute; top: 36%; left: 2%; width: 0%; height: 0%; border-radius: 20%; background-color: red; opacity: .2;"></button>
+
+          <!-- AUDIO MUSIC -->
+
+          <button id="audiobutton"  onclick="startAudio()" style="position: absolute; top: 2%; left: 83%; width: 15%; height: 13%; border-radius: 20%; background-color: red; opacity: .2;"></button>
+
+          <!-- AUDIO CAT -->
+
+          <button id="catbutton" onclick="clickable('cat')"  style="position: absolute; top: 56%; left: 26%; width: 13%; height: 7%; border-radius: 5%; background-color: red; opacity: .2;"></button>
+
+            <!-- teddy bear -->
+          <button id="teddybutton" onclick="clickable('teddybear')" style="position: absolute; top: 40%; left: 82%; width: 7%; height: 8%; border-radius: 20%; background-color: red; opacity: .2;"></button>
+
+          <!-- doll house -->
+
+          <button id="dollhousebutton" onclick="clickable('dollhouse')" style="position: absolute; top: 64%; left: 49%; width: 7%; height: 6%; border-radius: 20%; background-color: red; opacity: .2;"></button>
+
+
+          <!-- TEXT BOX -->
+
+          <p id= "readingtext" style="position: absolute; top: 79%; left: 8%; width: 70%; height: 8%; border-radius: 5%; color: black; font-size: 2em; z-index:100;"> Alice: Hi there! My name is Alice. I have to do all the tasks my family gives me so I can play with my dollhouse. Lets go see what mommy wants first! </p>
+
+          <!-- TEXT BOX NEXT -->
+          <button id="textboxbutton" style="position: absolute; top: 90%; left: 87%; width: 0%; height: 0%; border-radius: 50%; background-color: red; opacity: .2;"></button>
+
+          <br>
+          
+          <img  src="textbox1.png" alt="mainmenu" id="textboximg" />
+
+          <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+          <script src="Dollhouse.js"></script>
+
+
+      </div>    
+    </section>
+    </div>
+  </body>
+</html>

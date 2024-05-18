@@ -1,0 +1,86 @@
+body {
+    background-image: url('home.jpeg');
+    background-position: center bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 3.125em; /* Equivalent to 50px */
+}
+
+.inventory {
+    width: 40%; /* Adjust the width as needed */
+    position: absolute;
+    bottom: .2em; /* Adjust the distance from the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 2em;
+}
+
+.inventory img {
+    width: 100%; /* Make the image fill the container */
+    max-width: 15em; /* Set a maximum width for the image */
+    display: block; /* Ensure the image behaves as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.container p {
+    font-family: Arial, sans-serif;
+    color: ghostwhite;
+    font-size: 1.2em;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+.mainContent {
+    width: 25em; /* Equivalent to 400px */
+    margin: auto;
+    margin-top: 6.25em; /* Equivalent to 100px */
+}
+
+button {
+    display: inline-block;
+    padding: 0.9375em 1.875em; /* Equivalent to 15px 30px */
+    margin: 1.25em; /* Equivalent to 20px */
+    font-size: 1.2em;
+    text-decoration: none;
+    color: darkred;
+    background-color: white;
+    border: 0.125em solid darkred; /* Equivalent to 2px */
+    border-radius: 0.3125em; /* Equivalent to 5px */
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: darkred;
+    color: white;
+}
+
+.nav {
+    font-family: sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.links, .selected {
+    margin-left: 0.3125em; /* Equivalent to 0.5px */
+    margin-right: 0.3125em; /* Equivalent to 0.5px */
+}
+
+.header {
+    font-family: sans-serif;
+    color: darkred;
+    font-size: 3em;
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin-top: 1em; 
+    margin-bottom: .5em; /* Equivalent to 60px */
+}

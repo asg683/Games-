@@ -1,0 +1,74 @@
+body {
+	background-image: url('horror.jpeg');
+	background-position: center bottom;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.mainContent {
+	width: 400px;
+	margin: auto;
+	margin-top: 100px;
+}
+
+video {
+	width: 80%;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+
+p {
+    font-family: Arial, sans-serif;
+    color: ghostwhite;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: darkred;
+    border: 2px solid white; 
+}
+h1 {
+    
+    color: darkred;
+}
+
+
+.nav {
+	font-family:  sans-serif;
+	font-size: 1.5em;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.links, .selected {
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+
+.header {
+	font-family: sans-serif;
+	font-size: 4em;
+	text-align: center;
+	letter-spacing: 0.05em;
+	margin-top: 80px;
+	margin-bottom: 60px;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: darkred;
+}
+
+a:focus, a:hover {
+	color: beige;
+}
+
+a:active {
+	opacity: 0.5;
+}
+
+a.selected:link, a.selected:visited {
+	color: whitesmoke;
+}
